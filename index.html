@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <button id="open-sidebar-button" onclick="openSidebar()" araia-label="open sidebar" aria-expanded="false"
+            aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-lebel="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#c9c9c9">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg>
+                    </button></li>
+                <li class="home-li"><a class="active-link" href="index.html">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#geography">Geography</a></li>
+                <li><a href="#economics">Economics</a></li>
+                <li><a href="#pol_sci">Pol. Sci.</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <main>
+        <div class="glass-box heading">
+            <h1>All SSC Resources at a Single Place</h1>
+        </div>
+        <div class="glass-box p">
+            <p>This is a website that provides all SSC resources at a single place</p>
+        </div>
+        <div class="glass-box p" id="history">
+            <h3>History</h3><br>
+            <a href="html/History/Ch-1.html">Chapter 1 The Rise of Nationalism in Europe</a><br>
+            <a href="html/History/Ch-2.html">Chapter 2 Nationalism in India</a><br>
+            <a href="html/History/Ch-3.html">Chapter 3 The Making of a Global World</a><br>
+            <a href="html/History/Ch-4.html">Chapter 4 The Age of Industrialisation</a><br>
+            <a href="html/History/Ch-5.html">Chapter 5 Print Culture and the Modern World</a><br>
+        </div>
+        <div class="glass-box p" id="geography">
+            <h3>Geography</h3><br>
+            <a href="html/Geography/Ch-1.html">Chapter 1 Resources and Development</a><br>
+            <a href="html/Geography/Ch-2.html">Chapter 2 Forest and Wildlife Resources</a><br>
+            <a href="html/Geography/Ch-3.html">Chapter 3 Water Resources</a><br>
+            <a href="html/Geography/Ch-4.html">Chapter 4 Agriculture</a><br>
+            <a href="html/Geography/Ch-5.html">Chapter 5 Minerals and Energy Resources</a><br>
+            <a href="html/Geography/Ch-6.html">Chapter 6 Manufacturing Industries</a><br>
+            <a href="html/Geography/Ch-7.html">Chapter 7 Lifelines of National Economy</a><br>
+        </div>
+        <div class="glass-box p" id="economics">
+            <h3>Economics</h3><br>
+            <a href="html/Economics/Ch-1.html">Chapter 1 Development</a><br>
+            <a href="html/Economics/Ch-2.html">Chapter 2 Sectors of Indian Economy</a><br>
+            <a href="html/Economics/Ch-3.html">Chapter 3 Money and Credit</a><br>
+            <a href="html/Economics/Ch-4.html">Chapter 4 Globalisation and The Indian Economy</a><br>
+            <a href="html/Economics/Ch-5.html">Chapter 5 Consumer Rights</a><br>
+        </div>
+        <div class="glass-box p" id="pol_sci">
+            <h3>Political Science</h3><br>
+            <a href="html/Economics/Ch-1.html">Chapter 1 Power Sharing</a><br>
+            <a href="html/Economics/Ch-2.html">Chapter 2 Federalism</a><br>
+            <a href="html/Economics/Ch-3.html">Chapter 3 Gender, Religion and Caste</a><br>
+            <a href="html/Economics/Ch-4.html">Chapter 4 Political Parties</a><br>
+            <a href="html/Economics/Ch-5.html">Chapter 5 Outcomes of Democracy</a><br>
+        </div>
+        <div class="glass-box contact_us" id="contact_us">
+            <h1>Contact Us</h1>
+            <p>Have any query related to any topic of chapter or facing any problem feel free to contact us...</p>
+            <form action="https://formsubmit.co/madhurgarg141009@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Enter your Name">
+                <input type="email" name="email" placeholder="Enter your E-Mail Address">
+                <input type="text" name="subject" placeholder="Enter the Subject">
+                <textarea rows="5" name="msg" placeholder="Enter the Message"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn" type="sumbit">Send Mail</button>
+            </form>
+        </div>
+    </main>
+    <div class="footer">
+        <p class="footer_p">Copyright @2025 | Made By Madhur Garg (X-2)</p>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
